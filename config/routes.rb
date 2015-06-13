@@ -27,6 +27,7 @@ Rails.application.routes.draw do
   #   end
 
   get 'items/:id' => 'items#show'
+  get 'index' => 'items#index'
 
   # Example resource route with sub-resources:
   #   resources :products do
