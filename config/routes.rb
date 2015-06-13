@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   #     end
   #   end
 
+  get 'items/new' => 'items#new'
   get 'items/:id' => 'items#show'
   get 'index' => 'items#index'
 
