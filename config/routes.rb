@@ -28,7 +28,10 @@ Rails.application.routes.draw do
 
   get 'items/new' => 'items#new'
   get 'items/:id' => 'items#show'
-  get 'index' => 'items#index'
+  get 'items' => 'items#index'
+  post 'items' => 'items#create' # post means to make a new item. patch is used to update or add to an already made item.
+  get 'items/:id/edit' => 'items#edit'
+  patch 'items/:id' => 'items#update'
 
   # Example resource route with sub-resources:
   #   resources :products do
